@@ -4,10 +4,11 @@ import Nav from "./components/Nav";
 import LoginForm from "./components/LoginForm";
 import Decrease from "./components/Decrease";
 import Exponential from "./components/Exponential";
+import useOnline from "./hooks/useOnline";
 import "./App.css";
 
 function App() {
-  let links = [
+  const links = [
     {
       href: "https://reactjs.org/",
       name: "ReactJS",
@@ -17,6 +18,8 @@ function App() {
       name: "GatsbyJS",
     },
   ];
+
+  const online = useOnline();
 
   return (
     <div className="App">
@@ -30,6 +33,11 @@ function App() {
       <LoginForm />
       {/*<Decrease initialCount={0} />*/}
       <Exponential initialCount={1} />
+      <div>
+        {online
+          ? "App is connected to the internet"
+          : "App is not connected to the internet"}
+      </div>
     </div>
   );
 }
