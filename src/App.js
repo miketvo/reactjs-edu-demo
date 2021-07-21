@@ -1,8 +1,10 @@
-import "./App.css";
 import Jumbotron from "./components/Jumbotron";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import LoginForm from "./components/LoginForm";
+import Decrease from "./components/Decrease";
+import Exponential from "./components/Exponential";
+import "./App.css";
 
 function App() {
   let links = [
@@ -26,6 +28,8 @@ function App() {
         subtitle="This is my first ReactJS application"
       />
       <LoginForm />
+      {/*<Decrease initialCount={0} />*/}
+      <Exponential initialCount={1} />
     </div>
   );
 }
