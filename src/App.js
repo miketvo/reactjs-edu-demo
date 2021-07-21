@@ -2,6 +2,7 @@ import "./App.css";
 import Jumbotron from "./components/Jumbotron";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import LoginForm from "./components/LoginForm";
 
 function App() {
   let links = [
@@ -24,6 +25,7 @@ function App() {
         title="Hello World"
         subtitle="This is my first ReactJS application"
       />
+      <LoginForm />
     </div>
   );
 }
