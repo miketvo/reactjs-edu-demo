@@ -6,8 +6,9 @@ const DrinkSelector = ({ callback }) => (
         callback(document.getElementById("favorite-drink-type").value);
       }}
       id="favorite-drink-type"
+      defaultValue=""
     >
-      <option selected />
+      <option>Select</option>
       <option>Milk</option>
       <option>Juice</option>
       <option>Coffee</option>

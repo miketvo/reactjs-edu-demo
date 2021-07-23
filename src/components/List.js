@@ -22,12 +22,12 @@ const List = () => {
   return (
     <div>
       <p>
-        Application must be connected to the internet to work. Endpoint:{" "}
-        <a href={endPoint}>{endPoint}</a>
+        Application must be connected to the internet to work.{" "}
+        <a href={endPoint}>Endpoint</a>.
       </p>
       <ul>
         {data.map((item) => (
-          <li>{item.name}</li>
+          <li key={item.id}>{item.name}</li>
         ))}
       </ul>
     </div>
