@@ -13,6 +13,7 @@ import SwitchDisplay from "./components/SwitchDisplay";
 import Counter from "./components/Counter";
 import DrinkSelector from "./components/DrinkSelector";
 import DrinkDisplay from "./components/DrinkDisplay";
+import List from "./components/List";
 
 // Styles
 import style from "./App.module.css";
@@ -42,7 +43,7 @@ function App() {
       </Header>
       <Jumbotron
         title="Hello World"
-        subtitle="This is my first ReactJS application"
+        subtitle="I'm a lightning fast application built with ReactJS using create-react-app"
       />
       <LoginForm />
 
@@ -80,16 +81,24 @@ function App() {
           <DrinkDisplay drink={drink} />
           <DrinkSelector callback={setDrink} />
         </section>
+
+        <section>
+          <h2>Advanced example: retrieve data from a REST API</h2>
+          <p>
+            Use <code>fetch()</code>
+          </p>
+          <List />
+        </section>
       </main>
 
       <div className={style["network-status"]}>
         {online ? (
           <div className={style["online"]}>
-            App is connected to the internet
+            Application is connected to the internet
           </div>
         ) : (
           <div className={style["offline"]}>
-            App is not connected to the internet
+            Application is not connected to the internet
           </div>
         )}
       </div>
