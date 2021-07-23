@@ -11,7 +11,12 @@ const LoginForm = () => {
       method="post"
       onSubmit={(e) => {
         e.preventDefault();
-        if (password === verifyPassword) {
+        if (
+          username &&
+          password &&
+          verifyPassword &&
+          password === verifyPassword
+        ) {
           alert(`Success!\nUsername: ${username}\nPassword: ${password}`);
         } else {
           alert("Authentication failed");
