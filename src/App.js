@@ -46,9 +46,12 @@ function App() {
         <section>
           <h2>Example: Passing data from parent element to child element</h2>
           <p>Just pass it into the child element as a prop</p>
-          <SwitchDisplay value={isAwake} />
+          <SwitchDisplay
+            value={isAwake}
+            className="container justify-content-center align-items-center"
+          />
           <button
-            className="btn btn-light"
+            className="btn btn-light mx-1 my-3"
             onClick={() => {
               setAwake(true);
             }}
@@ -56,7 +59,7 @@ function App() {
             Wake up!
           </button>
           <button
-            className="btn btn-dark"
+            className="btn btn-dark mx-1 my-3"
             onClick={() => {
               setAwake(false);
             }}

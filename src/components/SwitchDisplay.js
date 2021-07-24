@@ -1,5 +1,9 @@
-const SwitchDisplay = ({ value }) => {
-  return <>{value ? <div>😃</div> : <div>😴</div>}</>;
+const SwitchDisplay = ({ value, className }) => {
+  return (
+    <div className={className} style={{ fontSize: "2rem" }}>
+      {value ? <div>😃</div> : <div>😴</div>}
+    </div>
+  );
 };
 
 export default SwitchDisplay;

@@ -4,6 +4,7 @@ const Counter = ({ count, callback }) => (
       onClick={() => {
         callback(count - 1);
       }}
+      className="btn btn-outline-primary mx-1 my-3"
     >
       Decrease
     </button>
@@ -11,6 +12,7 @@ const Counter = ({ count, callback }) => (
       onClick={() => {
         callback(count + 1);
       }}
+      className="btn btn-outline-primary mx-1 my-3"
     >
       Increase
     </button>
@@ -18,6 +20,7 @@ const Counter = ({ count, callback }) => (
       onClick={() => {
         callback(count * 2);
       }}
+      className="btn btn-outline-primary mx-1 my-3"
     >
       Exponential
     </button>
@@ -25,6 +28,7 @@ const Counter = ({ count, callback }) => (
       onClick={() => {
         callback(0);
       }}
+      className="btn btn-primary mx-1 my-3"
     >
       Reset
     </button>

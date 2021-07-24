@@ -1,27 +1,27 @@
 const DrinkDisplay = ({ drink }) => {
   switch (drink) {
     case "Milk":
-      return <>🥛</>;
+      return <div style={{ fontSize: "2rem" }}>🥛</div>;
     case "Juice":
-      return <>🧃</>;
+      return <div style={{ fontSize: "2rem" }}>🧃</div>;
     case "Coffee":
-      return <>☕</>;
+      return <div style={{ fontSize: "2rem" }}>☕</div>;
     case "Tea":
-      return <>🍵</>;
+      return <div style={{ fontSize: "2rem" }}>🍵</div>;
     case "Soda":
-      return <>🥤</>;
+      return <div style={{ fontSize: "2rem" }}>🥤</div>;
     case "Beer":
-      return <>🍺</>;
+      return <div style={{ fontSize: "2rem" }}>🍺</div>;
     case "Wine":
-      return <>🍷</>;
+      return <div style={{ fontSize: "2rem" }}>🍷</div>;
     case "Champagne":
-      return <>🥂</>;
+      return <div style={{ fontSize: "2rem" }}>🥂</div>;
     case "Sake":
-      return <>🍶</>;
+      return <div style={{ fontSize: "2rem" }}>🍶</div>;
     case "Cocktail":
-      return <>🍸</>;
+      return <div style={{ fontSize: "2rem" }}>🍸</div>;
     case "Liquor":
-      return <>🥃</>;
+      return <div style={{ fontSize: "2rem" }}>🥃</div>;
     default:
       return <>Please select a drink</>;
   }
