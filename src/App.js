@@ -1,9 +1,6 @@
 // Library
 import { useState } from "react";
 
-// Hooks
-import useOnline from "./hooks/useOnline";
-
 // Components
 import Jumbotron from "./components/Jumbotron";
 import Header from "./components/Header";
@@ -30,8 +27,6 @@ function App() {
     },
   ];
 
-  const online = useOnline();
-
   let [isAwake, setAwake] = useState(true);
   let [count, setCount] = useState(0);
   let [drink, setDrink] = useState("");
@@ -53,6 +48,7 @@ function App() {
           <p>Just pass it into the child element as a prop</p>
           <SwitchDisplay value={isAwake} />
           <button
+            className="btn btn-light"
             onClick={() => {
               setAwake(true);
             }}
@@ -60,6 +56,7 @@ function App() {
             Wake up!
           </button>
           <button
+            className="btn btn-dark"
             onClick={() => {
               setAwake(false);
             }}
@@ -90,18 +87,6 @@ function App() {
           <List />
         </section>
       </main>
-
-      <div className={style["network-status"]}>
-        {online ? (
-          <div className={style["online"]}>
-            Application is connected to the internet
-          </div>
-        ) : (
-          <div className={style["offline"]}>
-            Application is not connected to the internet
-          </div>
-        )}
-      </div>
     </div>
   );
 }

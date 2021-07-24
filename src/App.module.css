@@ -1,20 +1,3 @@
 .app {
   text-align: center;
 }
-
-.network-status {
-  position: fixed;
-  bottom: 0;
-  padding: 20px 40px;
-  font-weight: bold;
-  background: #262626;
-  color: #fff;
-}
-
-.network-status .online {
-  color: #50ca64;
-}
-
-.network-status .offline {
-  color: #e34242;
-}
