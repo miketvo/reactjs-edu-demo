@@ -22,48 +22,67 @@ const LoginForm = () => {
           alert("Authentication failed");
         }
       }}
+      className="shadow container py-lg-5 mb-5 w-50"
     >
-      <h1>Login</h1>
+      <h1 className="mb-5">Login</h1>
 
-      <div>
-        <label htmlFor="username">Username</label>
-        <input
-          id="username"
-          name="username"
-          type="text"
-          onChange={(e) => {
-            setUsername(e.target.value);
-          }}
-        />
+      <div className="form-group row mb-3 justify-content-center">
+        <label htmlFor="username" className="col-2 col-form-label text-end">
+          Username
+        </label>
+        <div className="col-8 pe-4">
+          <input
+            id="username"
+            name="username"
+            type="text"
+            onChange={(e) => {
+              setUsername(e.target.value);
+            }}
+            className="form-control"
+          />
+        </div>
       </div>
 
-      <div>
-        <label htmlFor="password">Password</label>
-        <input
-          id="password"
-          name="password"
-          type="password"
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-        />
+      <div className="form-group row mb-3 justify-content-center">
+        <label htmlFor="password" className="col-2 col-form-label text-end">
+          Password
+        </label>
+        <div className="col-8 pe-4">
+          <input
+            id="password"
+            name="password"
+            type="password"
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+            className="form-control"
+          />
+        </div>
       </div>
 
-      <div>
-        <label htmlFor="verify-password">Verify Password</label>
-        <input
-          id="verify-password"
-          name="verify_password"
-          type="password"
-          onChange={(e) => {
-            setVerifyPassword(e.target.value);
-          }}
-        />
+      <div className="form-group row mb-3 justify-content-center">
+        <label
+          htmlFor="verify-password"
+          className="col-2 col-form-label text-end"
+        >
+          Verify Password
+        </label>
+        <div className="col-8 pe-4">
+          <input
+            id="verify-password"
+            name="verify_password"
+            type="password"
+            onChange={(e) => {
+              setVerifyPassword(e.target.value);
+            }}
+            className="form-control"
+          />
+        </div>
       </div>
 
-      <div>
-        <input type="submit" value="Login" />
-      </div>
+      <button type="submit" className="btn btn-primary">
+        Login
+      </button>
     </form>
   );
 };
