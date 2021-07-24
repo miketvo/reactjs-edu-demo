@@ -4,8 +4,8 @@ const Nav = ({ links }) => {
   const online = useOnline();
 
   return (
-    <div className="navbar navbar-expand-lg navbar-dark bg-dark position-fixed top-0">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0 container-fluid justify-content-center">
+    <div className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0 container-fluid justify-content-start mx-lg-5">
         {links.map((link, index) => (
           <li key={index} className="nav-item">
             <a
@@ -20,11 +20,11 @@ const Nav = ({ links }) => {
         ))}
       </ul>
 
-      <div className="container">
+      <div className="container justify-content-end">
         {online ? (
-          <div className="alert alert-success mb-0">Online</div>
+          <div className="alert alert-success mb-0 px-lg-5">Online</div>
         ) : (
-          <div className="alert alert-danger mb-0">Offline</div>
+          <div className="alert alert-danger mb-0 px-lg-5">Offline</div>
         )}
       </div>
     </div>

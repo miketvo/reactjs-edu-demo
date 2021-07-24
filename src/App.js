@@ -36,13 +36,13 @@ function App() {
       <Header title="A ReactJS Application">
         <Nav links={links} />
       </Header>
+
       <Jumbotron
         title="Hello World"
-        subtitle="I'm a lightning fast application built with ReactJS using create-react-app"
+        subtitle="I'm a lightning fast application built with ReactJS using create-react-app and styled with Bootstrap"
       />
-      <LoginForm />
-
-      <main>
+      <main className={style["main"]}>
+        <LoginForm />
         <section>
           <h2>Example: Passing data from parent element to child element</h2>
           <p>Just pass it into the child element as a prop</p>
