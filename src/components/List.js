@@ -25,9 +25,9 @@ const List = () => {
         Application must be connected to the internet to work. Endpoint:{" "}
         <a href={endPoint}>{endPoint}</a>
       </p>
-      <ul>
+      <ul className="list-group w-25 m-auto">
         {data.map((item) => (
-          <li>{item.name}</li>
+          <li className="list-group-item">{item.name}</li>
         ))}
       </ul>
     </div>
