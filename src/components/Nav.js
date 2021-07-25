@@ -22,9 +22,9 @@ const Nav = ({ links }) => {
 
       <div className="container justify-content-end">
         {online ? (
-          <div className="alert alert-success mb-0 px-lg-5">Online</div>
+          <div className="alert alert-success mb-0 px-lg-5">ONLINE</div>
         ) : (
-          <div className="alert alert-danger mb-0 px-lg-5">Offline</div>
+          <div className="alert alert-danger mb-0 px-lg-5">OFFLINE</div>
         )}
       </div>
     </div>
